@@ -12,7 +12,9 @@ func sum(c chan int, list []int) {
 
 func main() {
 	c := make(chan int, 10)
-	list := []int{9, 10, 3}
-	go sum(c, list)
-	fmt.Println(<-c)
+	list1 := []int{9, 10, 3}
+	list2 := []int{9, 10, 5}
+	go sum(c, list1)
+	go sum(c, list2)
+	fmt.Println(<-c, <-c)
 }
