@@ -1,6 +1,6 @@
 # go-101
 
-Golang position in 2024
+Be a Gopher
 
 ## Best practices
 
